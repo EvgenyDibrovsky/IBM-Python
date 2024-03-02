@@ -1,81 +1,104 @@
-# Комментарии
-# Комментарии - это строки текста, которые игнорируются интерпретатором Python при выполнении кода.
+# Module 1 Cheat Sheet: Python Basics
 
-# Конкатенация
-# Объединяет (конкатенирует) строки.
+# Comments
+# Описание: Комментарии - это строки текста, которые Python интерпретатор игнорирует при выполнении кода.
+# Пример: 
+# This is a comment
+
+# Concatenation
+# Описание: Объединяет строки.
+# Синтаксис: 
 concatenated_string = string1 + string2
-# Пример:
+# Пример: 
 result = "Hello" + " John"
 
-# Типы данных
-# - Целое число
-# - Дробное число (с плавающей точкой)
-# - Логическое значение (Булев тип)
-# - Строка
-x = 7  # Целочисленное значение
-y = 12.4  # Значение с плавающей точкой
-is_valid = True  # Логическое значение
-F_Name = "John"  # Строковое значение
+# Data Types
+# Описание: - Integer - Float - Boolean - String
+# Примеры:
+x = 7  # Integer Value 
+y = 12.4  # Float Value 
+is_valid = True  # Boolean Value 
+is_valid = False  # Boolean Value 
+F_Name = "John"  # String Value
 
-# Индексация
-# Получает доступ к символу по определенному индексу.
+# Indexing
+# Описание: Доступ к символу по определённому индексу.
+# Пример: 
 my_string = "Hello"
 char = my_string[0]
 
 # len()
-# Возвращает длину строки.
+# Описание: Возвращает длину строки.
+# Синтаксис: 
+len(string_name)
+# Пример:
+my_string = "Hello"
 length = len(my_string)
 
 # lower()
-# Преобразует строку в нижний регистр.
-uppercase_text = my_string.lower()
+# Описание: Преобразует строку в нижний регистр.
+# Пример:
+my_string = "Hello"
+lowercase_text = my_string.lower()
 
 # print()
-# Выводит сообщение или переменную внутри `()`.
+# Описание: Выводит сообщение или переменную в `()`.
+# Примеры:
 print("Hello, world")
 print(a + b)
 
-# Операторы Python
-# - Сложение (+): Складывает два значения.
-# - Вычитание (-): Вычитает одно значение из другого.
-# - Умножение (*): Умножает два значения.
-# - Деление (/): Делит одно значение на другое, возвращает число с плавающей точкой.
-# - Целочисленное деление (//): Делит одно значение на другое, возвращает частное в виде целого числа.
-# - Остаток от деления (%): Возвращает остаток от деления.
+# Python Operators
+# Описание: - Addition (+): Складывает два значения.
+#            - Subtraction (-): Вычитает одно значение из другого.
+#            - Multiplication (*): Умножает два значения.
+#            - Division (/): Делит одно значение на другое, возвращает float.
+#            - Floor Division (//): Делит одно значение на другое, возвращает целое число.
+#            - Modulo (%): Возвращает остаток от деления.
+# Примеры:
 x = 9
 y = 4
-result_add = x + y  # Сложение
-result_sub = x - y  # Вычитание
-result_mul = x * y  # Умножение
-result_div = x / y  # Деление
-result_fdiv = x // y  # Целочисленное деление
-result_mod = x % y  # Остаток от деления
+result_add = x + y  # Addition
+result_sub = x - y  # Subtraction
+result_mul = x * y  # Multiplication
+result_div = x / y  # Division
+result_fdiv = x // y  # Floor Division
+result_mod = x % y  # Modulo
 
 # replace()
-# Заменяет подстроки.
+# Описание: Заменяет подстроки.
+# Пример:
+my_string = "Hello"
 new_text = my_string.replace("Hello", "Hi")
 
-# Срезы
-# Извлекает часть строки.
+# Slicing
+# Описание: Извлекает часть строки.
+# Синтаксис: 
 substring = string_name[start:end]
-# Пример:
+# Пример: 
 substring = my_string[0:5]
 
 # split()
-# Разбивает строку на список по разделителю.
+# Описание: Разделяет строку на список на основе разделителя.
+# Пример:
+my_string = "Hello, world"
 split_text = my_string.split(",")
 
 # strip()
-# Удаляет начальные/конечные пробелы.
+# Описание: Удаляет пробелы в начале и в конце строки.
+# Пример:
+my_string = " Hello "
 trimmed = my_string.strip()
 
 # upper()
-# Преобразует строку в верхний регистр.
+# Описание: Преобразует строку в верхний регистр.
+# Пример:
+my_string = "Hello"
 uppercase_text = my_string.upper()
 
-# Присваивание переменной
-# Присваивает значение переменной.
+# Variable Assignment
+# Описание: Назначает значение переменной.
+# Синтаксис: 
 variable_name = value
-# Пример:
-name = "John"  # Присваивание значения "John" переменной name
-x = 5  # Присваивание значения 5 переменной x
+# Примеры:
+name = "John"  # assigning John to variable name
+x = 5  # assigning 5 to variable x
